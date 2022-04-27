@@ -54,4 +54,10 @@ test {
             exceptionFormat "short"
         }
     }
+
+    task smoke_tests(type: Test) {
+        useJUnitPlatform{
+            includeTags "Smoke"
+        }
+    }
 }
